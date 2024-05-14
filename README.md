@@ -1,7 +1,7 @@
 # Bluespawn Walkthrough
 
 ## Introduction
-An active defense lab requiring us to analyze the efficiency of our EDR system (Bluespawn) given an attack scenario (Atomic Red Team). Because Atomic Red Team maps to the MITRE ATTA&CK Framework, we have the ability to specify our test technique accordingly and be able to detect it on our EDR tool. We can then see what the attack would look like from a blue team perspective. This analysis will help us to understand where security gaps may be present, furthering our understanding of what types of mitigation are needed. 
+An active defense lab requiring us to analyze the efficiency of our EDR system (Bluespawn) given an attack scenario (Atomic Red Team). Because Atomic Red Team maps to the MITRE ATTA&CK Framework, we have the ability to specify our test technique accordingly and be able to detect it on our EDR tool. We can then see what the attack would look like from a blue team perspective. This analysis will help us to understand where security gaps may be present, furthering our understanding of what types of mitigation are needed. Remember, this lab is not about Bluespawn or any EDR equivilent. This is about how we can test and see how our EDR reacts to post exploitation activities that an attacker may do in our environment. From an active perspective, we can run these attacks. Can we detect it?
 
 ## Environment and tools
 - Windows 10
@@ -56,10 +56,12 @@ C:\AtomicRedTeam\invoke-atomicredteam> Invoke-AtomicTest T1004
 
 7. Switch to command terminal and you should see Bluespawn alerts
 <img src="https://github.com/trixiahorner/Bluespawn/blob/main/images/B3.png?raw=true" height="80%" width="80%" alt="atomictest"/>
+Bluespawan easily detected T1004. I tried running a few other tests: T1013 and T1015, and it was not detected. From an active blue team perspective,
+this is a gap in our security support structure.
 <br>
 <br>
 
-8. In powershell, we need to return the environment to its original state after the attack. We do this with the *-cleanup* command
+9. In powershell, we need to return the environment to its original state after the attack. We do this with the *-cleanup* command
 ```
 C:\AtomicRedTeam\invoke-atomicredteam> Invoke-AtomicTest All -Cleanup
 ```
