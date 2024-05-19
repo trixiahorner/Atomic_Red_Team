@@ -1,4 +1,4 @@
-# Bluespawn Walkthrough
+# Atomic Red Team and Bluespawn
 
 ## Introduction
 An active defense lab requiring us to analyze the efficiency of our EDR system (Bluespawn) given an attack scenario (Atomic Red Team). Because Atomic Red Team maps to the MITRE ATTA&CK Framework, we have the ability to specify our test technique accordingly and be able to detect it on our EDR tool. We can then see what the attack would look like from a blue team perspective. This analysis will help us to understand where security gaps may be present, furthering our understanding of what types of mitigation are needed. Remember, this lab is not about Bluespawn or any EDR equivilent. This is about how we can use Atomic Red Team to test and see how our EDR reacts to post exploitation activities that an attacker may do in our environment. From an active perspective, we can run these attacks. Can we detect it?
