@@ -34,7 +34,7 @@ C:\tools>BLUESPAWN-client-x64.exe --monitor --level Cursory
 <br>
 <br>
 
-5. Now we will use Atomic Red Team to test Bluespawn and see if it picks up on anything. In the powershell window, navigate to the atomic red team directory and install the proper yaml modes
+5. Now I will use Atomic Red Team to test Bluespawn and see if it picks up on anything. In the powershell window, I navigate to the atomic red team directory and install the proper yaml modes
 ```
 C:\Users\adhd> cd C:\AtomicRedTeam\invoke-atomicredteam\
 C:\Users\adhd> Install-Module -Name powershell-yaml
@@ -47,7 +47,7 @@ C:\AtomicRedTeam\invoke-atomicredteam> Import-Module .\Invoke-AtomicRedTeam.psm1
 ```
 C:\AtomicRedTeam\invoke-atomicredteam> Invoke-AtomicTest All
 ```
-You can also be technique specific. This will make it faster. Remember, these techniques map to MITRE ATT&CK.
+I can also be technique specific. This will make it faster. Remember, these techniques map to MITRE ATT&CK.
 ```
 C:\AtomicRedTeam\invoke-atomicredteam> Invoke-AtomicTest T1004
 ```
@@ -62,11 +62,11 @@ this is a gap in our security support structure.
 <br>
 <br>
 
-9. In powershell, we need to return the environment to its original state after the attack. We do this with the *-cleanup* command
+9. In powershell, I need to return the environment to its original state after the attack. I do this with the *-cleanup* command
 ```
 C:\AtomicRedTeam\invoke-atomicredteam> Invoke-AtomicTest All -Cleanup
 ```
 <img src="https://github.com/trixiahorner/Bluespawn/blob/main/images/B4.png?raw=true" height="80%" width="80%" alt="cleanup"/>
 
 ## Conclusion
-Using Atomic Red Team to simulate various attack scenarios, we were able to observe Bluespawn's efficiency in detecting, investigating, and responding to threats. This lab demonstrated the importance of active defense mechanisms and identifying potential security gaps to enhance cybersecurity posture.
+Using Atomic Red Team to simulate various attack scenarios, I was able to observe Bluespawn's efficiency in detecting, investigating, and responding to threats. This lab demonstrated the importance of active defense mechanisms and identifying potential security gaps to enhance cybersecurity posture.
